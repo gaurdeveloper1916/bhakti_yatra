@@ -1,7 +1,7 @@
 const WhyChooseUs = () => {
     return (
         <>
-            <div className="bg-[#fff5dc] w-screen flex flex-col justify-between items-center p-16">
+            <div className="bg-[#fff5dc]  flex flex-col justify-between items-center p-16">
                 <h1 className="text-[#811300] text-2xl font-medium">Why Choose Us?</h1>
                 <div className="flex justify-between items-center mt-10 gap-20">
 

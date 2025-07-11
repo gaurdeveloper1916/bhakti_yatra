@@ -6,9 +6,9 @@ export default function BlackShadeSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "/pure-nature-landscape-single-tree-in-green-field-free-photo.webp",
-    "/pure-nature-landscape-single-tree-in-green-field-free-photo.webp",
-    "/pure-nature-landscape-single-tree-in-green-field-free-photo.webp",
+    "/indian-city-buildings-scene_23-2151823120.avif",
+    "/view-world-monument-celebrate-world-heritage-day_23-2151297147.avif",
+    "/indian-city-buildings-scene_23-2151823120.avif",
   ];
 
   const dynamicMessages = [

@@ -81,7 +81,7 @@ const TempleItinerary = () => {
   };
 
   return (
-    <section className="bg-white py-20 px-4">
+    <section className="bg-white py-20 px-4 " id="itinerary">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-[#dd511b] mb-12">
           Your Temple Tour – Step by Step

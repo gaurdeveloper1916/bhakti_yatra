@@ -45,7 +45,7 @@ const temples = [
 
 const FeaturedTemples = () => {
   return (
-    <section className=" bg-white">
+    <section className="bg-white" id="featured-temples">
       <div className="container w-full lg:max-w-7xl px-5 lg:px-0 mx-auto ">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#dd511b]">
@@ -91,7 +91,7 @@ const FeaturedTemples = () => {
                   </span>
                 </div>
                 <button className="mt-auto w-full border border-[#dd511b] text-[#dd511b] py-2 px-4 rounded hover:bg-[#dd511b] hover:text-white transition">
-                  View Details
+                  Contact details
                 </button>
               </div>
             </div>

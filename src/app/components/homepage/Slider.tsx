@@ -1,6 +1,7 @@
-'use client';
+"use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BlackShadeSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,12 +20,9 @@ export default function BlackShadeSection() {
     "Safar mandir ka, lekin saath dil ka.",
   ];
 
-  // Auto slide
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        (prevIndex + 1) % images.length
-      );
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
     return () => clearInterval(interval);
   }, [images.length]);
@@ -59,15 +57,21 @@ export default function BlackShadeSection() {
           {dynamicMessages[currentIndex]}
         </h1>
         <h5 className="text-lg max-w-2xl">
-          Kyunki sacha darshan sirf aankhon se nahi, dil se hota hai — aur jab bhakti ki roshni jagti hai, toh mandir chahe kitni bhi door ho, uski mahsoos har pal hoti hai.
+          Kyunki sacha darshan sirf aankhon se nahi, dil se hota hai — aur jab
+          bhakti ki roshni jagti hai, toh mandir chahe kitni bhi door ho, uski
+          mahsoos har pal hoti hai.
         </h5>
-        <div className="flex gap-5 flex-wrap justify-center">
-          <button className="bg-[#dd511b] text-white font-semibold rounded-full px-5 py-2">
+        <div className="flex gap-5 flex-wrap justify-center items-center">
+         <Link href='#booking'>
+          <button className="bg-[#dd511b] cursor-pointer text-white font-semibold rounded-full px-5 py-2">
             Book Your Spiritual Journey
           </button>
-          <button className="border border-white text-white text-sm rounded-full px-3 py-1">
+         </Link>
+          <Link href='#featured-temples'>
+          <button className="border cursor-pointer border-white text-white text-sm rounded-full px-3 py-1">
             Explore Mandir
           </button>
+          </Link>
         </div>
       </div>
 
